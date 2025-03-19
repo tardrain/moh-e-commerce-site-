@@ -25,11 +25,10 @@
     border-bottom: 2px solid white;
 }
 .search{
-    background-color: black;
     border: none;
-    width: 28px;
-    height: 28px;
-    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    background-color: black;
     opacity: 0%;
 }
 #menu{
@@ -41,6 +40,8 @@
 
 .logo {
     font-family: inria serif;
+    font-size: 18px;
+    text-align: center;
 
 }
 .menu-icon {
@@ -171,7 +172,7 @@ body {
     color: white;
     padding-top: 58px;
     text-align: center;
-    font-size: 35px;
+    font-size: 32pxpx;
     font-family: Italiana;
     font-weight: lighter;
  }

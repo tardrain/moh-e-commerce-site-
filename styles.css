@@ -42,6 +42,7 @@
 
 .logo {
     font-family: inria serif;
+    font-size: 18px;
 
 }
 .menu-icon {
@@ -128,7 +129,7 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     display: inline-block;
@@ -159,6 +160,7 @@ body {
     padding-left:16px ;
     padding-bottom: 13px;
     font-family: inria serif;
+    font-size: 10px;
 }
 .image{
     display: flex;
@@ -184,6 +186,7 @@ body {
     padding-bottom: 1px;
     padding-top: 3px;
     font-weight: bold;
+    font-size: 13px;
 }
 .explain{
     color: #303030;
@@ -191,6 +194,7 @@ body {
     padding-left: 2px;
     font-weight: lighter;
     padding-bottom: 9px;
+    font-size: 12px;
 }
 .products-container {
     padding: 20px;
@@ -234,7 +238,7 @@ body {
     color: white;
     padding-bottom: 15px;
     text-align: left;
-    font-size: 16px;
+    font-size: 13px;
     font-family: inria serif;
     font-weight: lighter;
 }
@@ -264,6 +268,7 @@ body {
     font-weight: lighter;
     text-align: left;
     font-weight: bold;
+    font-size: 14px;
 }
 
 /* Footer */

@@ -25,11 +25,10 @@
     border-bottom: 2px solid white;
 }
 .search{
-    background-color: black;
     border: none;
     width: 0px;
     height: 0px;
-    overflow: hidden;
+    background-color: black;
     opacity: 0%;
 }
 #menu{
@@ -41,6 +40,9 @@
 
 .logo {
     font-family: inria serif;
+    font-size: 18px;
+    text-align: center;
+    padding-left: 40px;
 
 }
 .menu-icon {
@@ -49,7 +51,6 @@
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
 }
-
 /* Full-Screen Menu Overlay */
 .menu-overlay {
     position: fixed;
@@ -115,10 +116,7 @@
 }
 
 /* Add padding to prevent content from hiding under navbar */
-body {
-    padding-top: 60px;
-    background-color: black;
-}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -128,7 +126,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding-top: 60px;
+  background-color: black;
 }
+
 
 .checkout-container {
   background-color: white;
