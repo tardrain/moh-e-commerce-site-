@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jaini&family=Inria+Serif&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="menu-icon" id="menuButton">
+            <img src="Vector.svg" alt="menu">
+        </div>
+        <div class="logo">DAVISHIAN EMPORIUM</div>
+        <button class="search">
+            <img src="material-symbols_search.svg" alt="search">
+        </button>
+    </nav>
+    <div id="menuOverlay" class="menu-overlay">
+        <span class="close-button" id="closeButton">&times;</span> <!-- X Close Button -->
+        <ul class="menu-links">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="gift.html">Gifts</a></li>
+                <li><a href="flower.html">Flowers</a></li>
+                <li><a href="candles.html">Scented Candles</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+    </div>
+    <div class="cart-container">
+        <h1>Bag</h1>
+        <div id="cart-summary">
+          <p id="item-count">0 Items | $0.00</p>
+        </div>
+    
+        <div id="cart-items"></div>
+    
+        <div class="shipping-message">
+          
+    
+        <a href="checkout.html" class="checkout-button">Go to Checkout</a>
+      </div>
+    
+    </div>
+
+
+
+  
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Gifts/Flowers/Scented Candles/Fragrance</p>
+        
+        <h3>FOLLOW US</h3>
+        <div class="footer-icons">
+            <img src="ic_baseline-facebook.svg" alt="Facebook">
+            <img src="ic_baseline-tiktok.svg" alt="TikTok">
+            <img src="instagram.svg" alt="Instagram">
+        </div>
+    
+        <p class="copyright">
+            ©2025 davishian emporium. All rights reserved. Unauthorized use or 
+            reproduction of any content on this website without prior written 
+            permission is strictly prohibited.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      displayCart();
+    </script>
+
+</body>
+</html>
+
