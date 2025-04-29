@@ -143,7 +143,7 @@ function sendOrderToWhatsApp() {
 
   // Replace with your WhatsApp number in international format
   const whatsappNumber = '+254712345678'; // Example: Kenyan number
-  const whatsappUrl = `https://wa.me/${254112840674}?text=${encodedMessage}`;
+  const whatsappUrl = `https://wa.me/${254115407308}?text=${encodedMessage}`;
 
     // Clear the cart
     localStorage.removeItem('cart');
