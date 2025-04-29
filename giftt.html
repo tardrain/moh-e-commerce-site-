@@ -37,7 +37,7 @@
                 <a href="index.html">HOME</a>
                 <a href="contact.html">CONTACT US</a>
                 <a href="gift.html">GIFTS</a>
-                <a href="giftt.html">GIFTS FOR HER/HIM</a>
+                <a href="giftf/her/him.html">GIFTS FOR HER/HIM</a>
                 <a href="flower.html">FLOWERS</a>
                 <a href="candles.html">SCENTED CANDLES</a>
                 <a href="flowerwrappers.html">FLOWER WRAPPERS</a>
@@ -72,11 +72,7 @@
                  <img src="candle1.jpg"  alt="Luxurious Kimono Set">
              </div>
             </a>
-            <div class="product-info">
-                <h3 class="product-title">Rose verbana</h3>
-                <p class="product-price">KShs 6,000.00</p>
-                <button onclick="addToCart('Rose verbana',6000,  'Good smell ','gift4.jpg','candle1.jpg')" class="add-to-cart">Add to Cart</button>                
-            </div>
+           
         </div>
         
         <!-- Product 2 -->
@@ -87,11 +83,7 @@
                  <img src="gift4.jpg"  alt="Luxurious Kimono Set">
              </div>
             </a>
-            <div class="product-info">
-                <h3 class="product-title">Magnetic gift box </h3>
-                <p class="product-price">KShs 6,000.00</p>
-                <button onclick="addToCart('Magnetic box black',1200,  'best for suprise','gift4.jpg','gift4.jpg')" class="add-to-cart">Add to Cart</button>                
-            </div>
+            
         </div>
         <div class="product-card">
             <a href="candle2.html" class="description">
@@ -100,11 +92,7 @@
                  <img src="candle2.jpg"  alt="Luxurious Kimono Set">
              </div>
             </a>
-            <div class="product-info">
-                <h3 class="product-title">Lime basil</h3>
-                <p class="product-price">KShs 6,000.00</p>
-                <button onclick="addToCart('Lime basil',6000,  'Fragrance smell','gift4.jpg','candle2.jpg')" class="add-to-cart">Add to Cart</button>                
-            </div>
+            
         </div>
          <!-- Product 1 -->
          <div class="product-card">
@@ -114,17 +102,36 @@
                  <img src="gift2.jpg"  alt="Luxurious Kimono Set">
              </div>
             </a>
-            <div class="product-info">
-                <h3 class="product-title">Magnetic gift box</h3>
-                <p class="product-price">KShs 6,000.00</p>
-                <button onclick="addToCart('Magnetic box pink',1200,  'best for suprise','gift4.jpg','gift2.jpg')" class="add-to-cart">Add to Cart</button>                
-            </div>
+            
         </div>
          
         
         <!-- Add more products as needed -->
     </div>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <span class="error-message" id="name-error">Please enter a valid name.</span>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+            <span class="error-message" id="name-error">Please enter a valid name.</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required>
+            <span class="error-message" id="name-error">Please enter a valid name.</span>
+          </div>
+          <button type="button" onclick="sendOrderToWhatsApp()">Place Order via WhatsApp</button>
+        </form>
+    </div>
+    
 </section>
+
 
     <!-- Footer -->
     <footer class="footer">
