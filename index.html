@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jaini&family=Inria+Serif&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -15,108 +17,113 @@
         <div class="menu-icon" id="menuButton">
             <img src="Vector.svg" alt="menu">
         </div>
-        <div class="logo">DAVISHIAN EMPORIUM</div>
+        <div class="logoii">
+            D A V I S H I A N
+            <span class="logo-subtitle">—Emporium—</span>
+        </div>
         <button class="search">
             <img src="material-symbols_search.svg" alt="search">
         </button>
     </nav>
  <div id="menuOverlay" class="menu-overlay">
         <span class="close-button" id="closeButton">&times;</span> <!-- X Close Button -->
-         <ul class="menu-links">
-              <li><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="gift.html">Gifts</a></li>
-                <li><a href="flower.html">Flowers</a></li>
-                <li><a href="candles.html">Scented Candles</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
-         </ul>
+        <div class="menu-sidebar">
+            <div class="logo">
+                DAVISHIAN
+                <span class="logo-subtitle">—Emporium—</span>
+            </div>
+            
+            <div class="menu-items">
+                <a href="index.html">HOME</a>
+                <a href="contact.html">CONTACT US</a>
+                <a href="gift.html">GIFTS</a>
+                <a href="flower.html">FLOWERS</a>
+                <a href="candles.html">SCENTED CANDLES</a>
+                <a href="flowerwrappers.html">FLOWER WRAPPERS</a>
+                <a href="cart.html">CART</a>
+                <a href="sendorder.html">SEND ORDER</a>
+            </div>
+            
+            <div class="menu-divider"></div>
+            
+           
+        </div>
   </div>
 
     <!-- Intro Section -->
     <section class="intro">
-        <p>Happy Women's Month
             <img src="material-symbols_celebration.svg">
-        </p>
     </section>
     <section class="image">
         <img src="women.png" alt="small-image">
     </section>
 
-    <!-- Products Section -->
-    <section class="products-container">
-        <div class="top-deals-card">
-            <h2 class="top">TOP DEALS TODAY!!!!!
-                <img src="game-icons_glass-celebration.svg" alt="glass">
-            </h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'enriched with pure beauty', 'XS', 'perfume.png')">Add to Cart</button>
-                    
-                </div>
-                <div class="product-card">
-                    <img src="gift.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('gift', 7500, 'Halter Neck Performance Top', 'XS', 'gift.png')">Add to Cart</button>
-                    
-                </div>
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'Halter Neck Performance Top', 'XS', 'nike-top.jpg')">Add to Cart</button>
-                   
-                </div>
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'Halter Neck Performance Top', 'XS', 'nike-top.jpg')">Add to Cart</button>
-                   
-                </div>
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'Halter Neck Performance Top', 'XS', 'nike-top.jpg')">Add to Cart</button>
-                  
-                </div>
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'Halter Neck Performance Top', 'XS', 'nike-top.jpg')">Add to Cart</button>
-                  
-                </div>
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'Halter Neck Performance Top', 'XS', 'nike-top.jpg')">Add to Cart</button>
-                   
-                </div>
-                <div class="product-card">
-                    <img src="perfume.png" alt="Product 1">
-                    <p class="product-name">Dior perfume</p>
-                    <p class="explain">Men's perfume <br>3 colors</p>
-                    <span>KSHS 1500/=</span>
-                    <button class="add-to-cart-button" onclick="addToCart('Nike Gymnastics', 7500, 'Halter Neck Performance Top', 'XS', 'nike-top.jpg')">Add to Cart</button>
+   <!-- Products Section -->
+   <section class="products-section">
+    <h2 class="section-title">*NEW ARRIVALS !!*</h2>
+    
+    <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <a href="candle1.html" class="description">
 
-                   
+              <div class="product-image">
+                 <img src="candle1.jpg"  alt="Luxurious Kimono Set">
+             </div>
+            </a>
+            <div class="product-info">
+                <h3 class="product-title">Rose verbana</h3>
+                <p class="product-price">KShs 6,000.00</p>
+                <button onclick="addToCart('Rose verbana',6000,  'Good smell ','gift4.jpg','candle1.jpg')" class="add-to-cart">Add to Cart</button>                
             </div>
         </div>
-    </section>
+        
+        <!-- Product 2 -->
+        <div class="product-card">
+            <a href="giftbox4.html" class="description">
+
+              <div class="product-image">
+                 <img src="gift4.jpg"  alt="Luxurious Kimono Set">
+             </div>
+            </a>
+            <div class="product-info">
+                <h3 class="product-title">Magnetic gift box </h3>
+                <p class="product-price">KShs 6,000.00</p>
+                <button onclick="addToCart('Magnetic box black',1200,  'best for suprise','gift4.jpg','gift4.jpg')" class="add-to-cart">Add to Cart</button>                
+            </div>
+        </div>
+        <div class="product-card">
+            <a href="candle2.html" class="description">
+
+              <div class="product-image">
+                 <img src="candle2.jpg"  alt="Luxurious Kimono Set">
+             </div>
+            </a>
+            <div class="product-info">
+                <h3 class="product-title">Lime basil</h3>
+                <p class="product-price">KShs 6,000.00</p>
+                <button onclick="addToCart('Lime basil',6000,  'Fragrance smell','gift4.jpg','candle2.jpg')" class="add-to-cart">Add to Cart</button>                
+            </div>
+        </div>
+         <!-- Product 1 -->
+         <div class="product-card">
+            <a href="giftbox2.html" class="description">
+
+              <div class="product-image">
+                 <img src="gift2.jpg"  alt="Luxurious Kimono Set">
+             </div>
+            </a>
+            <div class="product-info">
+                <h3 class="product-title">Magnetic gift box</h3>
+                <p class="product-price">KShs 6,000.00</p>
+                <button onclick="addToCart('Magnetic box pink',1200,  'best for suprise','gift4.jpg','gift2.jpg')" class="add-to-cart">Add to Cart</button>                
+            </div>
+        </div>
+         
+        
+        <!-- Add more products as needed -->
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">

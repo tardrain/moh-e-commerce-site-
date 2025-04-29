@@ -58,8 +58,11 @@ function displayCart() {
 
   let total = 0;
   cart.forEach((item, index) => {
-    const itemTotal = item.price * (item.quantity || 1); // Calculate total for this item
-    total += itemTotal; // Add to the overall total
+    // Ensure price is treated as a number (fallback to 0 if invalid)
+    const price = Number(item.price) || 0;
+    const quantity = item.quantity || 1;
+    const itemTotal = price * quantity;
+    total += itemTotal;
 
     const itemElement = document.createElement('div');
     itemElement.className = 'cart-item';
@@ -68,8 +71,8 @@ function displayCart() {
       <div class="cart-item-details">
         <h3>${item.name}</h3>
         <p>${item.description || ''}</p>
-        <p>Size: ${item.size || 'N/A'}</p>
-        <p>KES ${item.price.toFixed(2)} x ${item.quantity || 1} = KES ${itemTotal.toFixed(2)}</p>
+        
+        <p>KES ${price.toFixed(2)} x ${quantity} = KES ${itemTotal.toFixed(2)}</p>
       </div>
       <div class="cart-item-actions">
         <button onclick="increaseQuantity(${index})">+</button>
@@ -79,7 +82,7 @@ function displayCart() {
     cartItems.appendChild(itemElement);
   });
 
-  itemCount.textContent = `${cart.length} Items | KES ${total.toFixed(2)}`;
+  itemCount.textContent = `${cart.length} Item${cart.length !== 1 ? 's' : ''} | KES ${total.toFixed(2)}`;
 }
 
 // Increase Quantity

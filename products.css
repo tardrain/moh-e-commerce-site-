@@ -1,10 +1,12 @@
+/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: inria serif, Jaini,Italiana;
+    font-family: inria serif;
     overflow-x: hidden;
 }
+
 /* Navbar */
 .navbar {
     background-color: black;
@@ -122,6 +124,167 @@
     color: #ffcc00;
 }
 
+/* Add padding to prevent content from hiding under navbar */
+body {
+    padding-top: 60px;
+    background-color: white;
+    max-width: 100%;
+}
+/* Products Section */
+.products-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: Poppins;
+    text-decoration: underline;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: Poppins;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-align: left;
+    font-family: Poppins;
+    padding-bottom: 10px;
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Poppins;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+/* Intro Section */
+
+.image{
+    display: flex;
+    justify-content: center;
+    height: 230px;
+}
+.gift-image{
+    display: flex;
+    justify-content: center;
+    height: 220px;
+
+}
+
+
+
+
+
+
+
+/* Footer */
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: black; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: left;
+    font-family: Poppins;
+}
+
+/* Footer heading */
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:yellow;
+    text-align: left;
+    padding-top: 29px;
+    padding-bottom: 14px;
+    font-family: Poppins;
+    text-decoration: underline;
+}
+
+/* Social media images */
+.footer-icons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 30px; /* Adjust size of icons */
+    height: 30px;
+    object-fit: contain; /* Keep aspect ratio */
+}
+
+/* Copyright text */
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: Popppins;
+}
+
 
 .logoii{
     color: white;
@@ -158,7 +321,6 @@
     color: #999;
     text-align: center;
     font-weight: normal;
-    font-family: Allura;
 }
 
 .menu-items {
@@ -215,102 +377,4 @@
     content: "+";
     margin-left: 5px;
     font-size: 14px;
-}
-
-/* Add padding to prevent content from hiding under navbar */
-body {
-    padding-top: 60px;
-    background-color: black;
-    max-width: 100%;
-    font-family: Poppins;
-}
-
-.icon-address{
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 15px;
-}
-.address-text{
-    color: white;
-    font-family: Jaini;
-    padding-left: 75px;
-    padding-bottom: 60px;
-    font-family: Poppins;
-}
-.icon-phone{
-    padding-left: 30px;
-    padding-bottom: 15px;
-}
-.phone-text{
-    color: white;
-    font-family: Jaini;
-    padding-left: 75px;
-    padding-bottom: 50px;
-    font-family: Poppins;
-}
-
-.icon-whatsapp{
-    padding-left: 30px;
-    padding-bottom: 15px;
-}
-.whatsapp-text{
-    color: white;
-    padding-left: 75px;
-    padding-bottom: 50px;
-    font-family: Poppins;
-}
-
-
-
-
-.contact-heading{
-    color: black;
-    padding-top: 58px;
-    text-align: center;
-    font-size: 32pxpx;
-    font-family: Poppins;
-    font-weight: lighter;
- }
- .footer {
-    width: 100%;
-    background-color: black; /* Dark background */
-    color: white; /* Text color */
-    padding: 20px;
-    text-align: left;
-    font-family: Poppins;
-}
-
-/* Footer heading */
-.footer h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color:yellow;
-    text-align: left;
-    padding-top: 29px;
-    padding-bottom: 14px;
-    font-family: Poppins;
-    text-decoration: underline;
-}
-
-/* Social media images */
-.footer-icons {
-    display: flex;
-    justify-content: left;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.footer-icons img {
-    width: 30px; /* Adjust size of icons */
-    height: 30px;
-    object-fit: contain; /* Keep aspect ratio */
-}
-
-/* Copyright text */
-.copyright {
-    font-size: 12px;
-    margin-top: 10px;
-    padding-top: 20px;
-    text-align: center;
-    font-family: Popppins;
 }

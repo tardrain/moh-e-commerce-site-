@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Website</title>
+    <title>Luxurious Kimono Set - Cream | VUGUTSA</title>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jaini&family=Inria+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="description.css">
 </head>
 <body>
-
-   <!-- Navbar -->
+     <!-- Navbar -->
    <nav class="navbar">
     <div class="menu-icon" id="menuButton">
         <img src="Vector.svg" alt="menu">
@@ -34,7 +33,6 @@
             DAVISHIAN
             <span class="logo-subtitle">—Emporium—</span>
         </div>
-        
         <div class="menu-items">
             <a href="index.html">HOME</a>
             <a href="contact.html">CONTACT US</a>
@@ -46,30 +44,53 @@
             <a href="sendorder.html">SEND ORDER</a>
         </div>
         
+        
         <div class="menu-divider"></div>
         
        
     </div>
 </div>
-    <div class="cart-container">
-        <h1>Bag</h1>
-        <div id="cart-summary">
-          <p id="item-count">0 Items | $0.00</p>
-        </div>
-    
-        <div id="cart-items"></div>
-    
-        <div class="shipping-message">
-          
-    
-        <a href="checkout.html" class="checkout-button">Go to Checkout</a>
-      </div>
-    
+    <div class="container">
+        <header class="product-header">
+            <div class="brand-name">V U G U T S A</div>
+            <div class="brand-subtitle">– Designs –</div>
+        </header>
+        
+        <main class="product-container">
+            <section class="product-images">
+                <img src="gift.png" alt="Luxurious Kimono Set - Cream" class="main-image">
+                
+            </section>
+            
+            <section class="product-details">
+                <h1 class="product-title">Woodsage – </h1>
+                <div class="product-price">KShs 11,000.00</div>
+                <div class="sales-badge">✓ 6 sold in last 6 hours</div>
+                
+                <p class="product-description">
+                    Elevate your wardrobe with this Luxurious Kimono, an exquisite piece that embodies both elegance and sophistication. 
+                    The stunning floral pattern in navy blue contrasts beautifully with the soft ivory background.
+                </p>
+                
+                <ul class="features-list">
+                    <li><strong>Elegant Design:</strong> Adorned with intricate cream patterns</li>
+                    <li><strong>Versatile Styling:</strong> Whether paired with casual wear or dressed up for a special event, the kimono offers versatility for both day and night occasions.</li>
+                    <li><strong>Premium Fabric:</strong> Made from a luxurious fabric blend, the kimono is soft to the touch, making it as comfortable as it is stylish.</li>
+                </ul>
+                
+                <div class="action-buttons">
+                   
+                    <button onclick="addToCart('Woodsage',6000,  'Visitor worthy','gift4.jpg','candle4.jpg')" class="add-to-cart">Add to Cart</button>                
+            
+                    <a href="sendorder.html" class="buy-now"> send order</a>
+                </div>
+                
+                <div class="viewers-count">12 people are viewing this right now</div>
+                
+               
+            </section>
+        </main>
     </div>
-
-
-
-  
     <!-- Footer -->
     <footer class="footer">
         <p>Gifts/Flowers/Scented Candles/Fragrance</p>
@@ -88,10 +109,6 @@
         </p>
     </footer>
     <script src="script.js"></script>
-    <script>
-      displayCart();
-    </script>
 
 </body>
 </html>
-
