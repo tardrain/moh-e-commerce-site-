@@ -1,11 +1,141 @@
-/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: inria serif;
+    font-family: Raleway;
     overflow-x: hidden;
 }
+
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    margin-top: 200px;
+}
+
+.page-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.page-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.order-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.form-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.whatsapp-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-icon {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .product-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+
+
 
 /* Navbar */
 .navbar {
@@ -48,7 +178,7 @@
 
 }
 .logo-subtitle{
-    font-family: Allura;
+    font-family: Raleway;
     font-size: 10px;
     color: white;
     font-weight: bolder;
@@ -122,167 +252,6 @@
 
 .menu-links a:hover {
     color: #ffcc00;
-}
-
-/* Add padding to prevent content from hiding under navbar */
-body {
-    padding-top: 60px;
-    background-color: white;
-    max-width: 100%;
-}
-/* Products Section */
-.products-section {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    background-color: #fff;
-}
-
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-family: Poppins;
-    text-decoration: underline;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.product-card {
-    border: 1px solid #eee;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.product-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-.product-info {
-    text-align: left;
-    padding-top: 10px;
-}
-
-.product-title {
-    font-size: 16px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #333;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-family: Poppins;
-}
-
-.product-price {
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
-    text-align: left;
-    font-family: Poppins;
-    padding-bottom: 10px;
-}
-
-.add-to-cart {
-    width: 100%;
-    background-color: #000;
-    color: white;
-    border: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: Poppins;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.add-to-cart:hover {
-    background-color: #333;
-}
-
-/* Intro Section */
-
-.image{
-    display: flex;
-    justify-content: center;
-    height: 230px;
-}
-.gift-image{
-    display: flex;
-    justify-content: center;
-    height: 220px;
-
-}
-
-
-
-
-
-
-
-/* Footer */
-/* Footer styles */
-.footer {
-    width: 100%;
-    background-color: black; /* Dark background */
-    color: white; /* Text color */
-    padding: 20px;
-    text-align: left;
-    font-family: Poppins;
-}
-
-/* Footer heading */
-.footer h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color:yellow;
-    text-align: left;
-    padding-top: 29px;
-    padding-bottom: 14px;
-    font-family: Poppins;
-    text-decoration: underline;
-}
-
-/* Social media images */
-.footer-icons {
-    display: flex;
-    justify-content: left;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.footer-icons img {
-    width: 30px; /* Adjust size of icons */
-    height: 30px;
-    object-fit: contain; /* Keep aspect ratio */
-}
-
-/* Copyright text */
-.copyright {
-    font-size: 12px;
-    margin-top: 10px;
-    padding-top: 20px;
-    text-align: center;
-    font-family: Popppins;
 }
 
 
@@ -378,4 +347,51 @@ body {
     content: "+";
     margin-left: 5px;
     font-size: 14px;
+}
+
+
+/* Footer */
+/* Footer styles */
+.footer {
+    width: 100%;
+    background-color: black; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: left;
+    font-family: Poppins;
+}
+
+/* Footer heading */
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:yellow;
+    text-align: left;
+    padding-top: 29px;
+    padding-bottom: 14px;
+    font-family: Poppins;
+    text-decoration: underline;
+}
+
+/* Social media images */
+.footer-icons {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 30px; /* Adjust size of icons */
+    height: 30px;
+    object-fit: contain; /* Keep aspect ratio */
+}
+
+/* Copyright text */
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: Popppins;
 }
