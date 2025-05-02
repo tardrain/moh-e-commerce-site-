@@ -29,9 +29,9 @@ function sendToWhatsApp() {
                    `Please confirm this order. Thank you!`;
 
     // Replace with your WhatsApp number (with country code, no + or 0)
-    const whatsappNumber = "0112840674";
+    const whatsappNumber = "0115407308";
     const encodedMessage = encodeURIComponent(message);
     
     // Open WhatsApp
-    window.open(`https://wa.me/${+254112840674}?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/${+254115407308}?text=${encodedMessage}`, '_blank');
 }
