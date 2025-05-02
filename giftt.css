@@ -12,17 +12,19 @@
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 .page-header h1 {
-    color: #2c3e50;
+    color: black;
     font-size: 2.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .page-header p {
     color: #7f8c8d;
     font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .product-gallery {
