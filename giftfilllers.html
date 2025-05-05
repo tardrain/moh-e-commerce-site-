@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxurious Kimono Set - Cream | VUGUTSA</title>
+    <title>E-Commerce Website</title>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jaini&family=Inria+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="description.css">
+    <link rel="stylesheet" href="products.css">
 </head>
 <body>
-     <!-- Navbar -->
+
+   <!-- Navbar -->
    <nav class="navbar">
     <div class="menu-icon" id="menuButton">
         <img src="Vector.svg" alt="menu">
     </div>
     <div class="logoii">
-        D A V I S H I A N
+        D A V I S H I A N' S
         <span class="logo-subtitle">—Emporium—</span>
     </div>
     <button class="search">
@@ -30,7 +31,7 @@
     <span class="close-button" id="closeButton">&times;</span> <!-- X Close Button -->
     <div class="menu-sidebar">
         <div class="logo">
-            DAVISHIAN
+            DAVISHIAN'S
             <span class="logo-subtitle">—Emporium—</span>
         </div>
         
@@ -48,50 +49,62 @@
             <a href="sendorder.html">SEND ORDER</a>
         </div>
         
-        
         <div class="menu-divider"></div>
         
        
     </div>
 </div>
-    <div class="container">
-        <header class="product-header">
-            <div class="brand-name">V U G U T S A</div>
-            <div class="brand-subtitle">– Designs –</div>
-        </header>
-        
-        <main class="product-container">
-            <section class="product-images">
-                <img src="ribon1.jpg" alt="Luxurious Kimono Set - Cream" class="main-image">
-                
-            </section>
-            
-            <section class="product-details">
-                <h1 class="product-title">White Ribbon – 90m</h1>
-                <div class="product-price">KShs 500.00</div>
-                <div class="sales-badge">✓ 6 sold in last 6 hours</div>
-                
-                <p class="product-description">
-                    Our premium satin ribbons are the perfect finishing touch to any gift box or floral arrangement. Available in a stunning variety of elegant shades, they add that final layer of charm, personalization, and luxury — whether you’re going for bold, romantic, minimal, or playful.
 
-                    Soft to the touch with a graceful shine, our ribbons are made to elevate your unboxing experience with
-                </p>
-                
-                
-                
-                <div class="action-buttons">
-                   
-                    <button onclick="addToCart('White ribbon',500,  'crisp and elegant', '90m','ribon1.jpg')" class="add-to-cart">Add to Cart</button>               
-            
-                    
-                </div>
-                
-                <div class="viewers-count">12 people are viewing this right now</div>
-                
-               
-            </section>
-        </main>
+<!-- Intro Section -->
+<section class="intro">
+        <img src="material-symbols_celebration.svg">
+</section>
+<section class="image">
+    <img src="fillers1.jpg" alt="small-image">
+</section>
+
+<!-- Products Section -->
+<section class="products-section">
+<h2 class="section-title">*GIFT FILLERS*</h2>
+
+<div class="products-grid">
+     <!-- Product 1 -->
+     <div class="product-card">
+        <a href="fillers1.html" class="description">
+
+          <div class="product-image">
+             <img src="fillers1.jpg"  alt="Luxurious Kimono Set">
+         </div>
+        </a>
+        <div class="product-info">
+            <h3 class="product-title">Gift Filler Black</h3>
+            <p class="product-price">KShs 300.00 each</p>
+            <button onclick="addToCart('gift filler black',300,  'dark','gift4.jpg','fillers1.jpg')" class="add-to-cart">Add to Cart</button>                
+        </div>
     </div>
+    
+    <!-- Product 2 -->
+    <div class="product-card">
+        <a href="fillers2.html" class="description">
+
+          <div class="product-image">
+             <img src="fillers2.jpg"  alt="Luxurious Kimono Set">
+         </div>
+        </a>
+        <div class="product-info">
+            <h3 class="product-title">Gift Filler White</h3>
+            <p class="product-price">KShs 300.00 each</p>
+            <button onclick="addToCart('gift filler white',300,  'bright','gift4.jpg','fillers2.jpg')" class="add-to-cart">Add to Cart</button>                
+        </div>
+    </div>
+     
+     
+     
+    
+    <!-- Add more products as needed -->
+</div>
+</section>
+
     <!-- Footer -->
     <footer class="footer">
         <p>Gifts/Flowers/Scented Candles/Fragrance</p>
@@ -117,6 +130,7 @@
         </p>
     </footer>
     <script src="script.js"></script>
+    
 
 </body>
 </html>
